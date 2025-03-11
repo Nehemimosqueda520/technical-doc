@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical doc</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header class="main-header">Programing Languages</header>
+      <div class="links">
+        <a class="nav-link" href="#javascript">Javascript</a>
+        <a class="nav-link" href="#css">CSS</a>
+        <a class="nav-link" href="#python">Python</a>
+        <a class="nav-link" href="#java">Java</a>
+        <a class="nav-link" href="#c">C</a>
+      </div>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="javascript">
+        <header>Javascript</header>
+        <p>JavaScript is a high-level, interpreted, and object-oriented programming language widely used for web development. It is a dynamic language that allows developers to create interactive content on web pages, such as animations, dynamic forms, and real-time updates without reloading the page. JavaScript runs in the user's browser thanks to engines like V8 in Chrome and SpiderMonkey in Firefox, making it essential for the modern web experience. Additionally, its ecosystem includes popular libraries and frameworks like React, Angular, and Vue.js, which simplify the development of complex applications.</p>
+        <p>One of JavaScript's main advantages is its flexibility and ease of integration with HTML and CSS, allowing manipulation of the Document Object Model (DOM) to enhance user experience. It is also used for server-side development with environments like Node.js, making it a general-purpose language. Its active community and vast array of available resources make it an excellent choice for both beginners and experienced developers. Below is a simple JavaScript example that changes a paragraph's content when a button is clicked:</p>
+        <div class="code-container">
+          <code>document.addEventListener("DOMContentLoaded", () => {<br>
+    ⠀const button = document.getElementById("myButton");<br>
+    ⠀const paragraph = document.getElementById("myParagraph");<br>
+    ⠀<br>
+    button.addEventListener("click", () => {<br>
+      ⠀  paragraph.textContent = "The content has changed!";<br>
+    ⠀});<br>
+});</code>
+        </div>
+        <ul>
+          <li></li>
+        </ul>
+      </section>
+      <section class="main-section" id="css">
+        <header>CSS</header>
+        <p>CSS (Cascading Style Sheets) is a stylesheet language used to control the appearance and layout of HTML documents. It allows developers to apply styles such as colors, fonts, spacing, and positioning to web elements, ensuring a visually appealing and responsive design. CSS can be written directly in an HTML file using the "style" tag, included as an external file, or applied inline to specific elements. It also supports various selectors, pseudo-classes, and animations to create dynamic and engaging user interfaces.</p>
+        <p>One of CSS's key strengths is its ability to separate content from presentation, improving maintainability and scalability in web development. It enables responsive design through techniques like media queries, flexbox, and grid, ensuring that web pages adapt smoothly to different screen sizes and devices. CSS frameworks like Bootstrap and Tailwind CSS further simplify styling by providing pre-designed components and utility classes. Below is a simple CSS example that changes the background color and styles a button when hovered over:</p>
+        <div class="code-container">
+          <code>body {<br>
+    ⠀font-family: Arial, sans-serif;<br>
+    ⠀background-color: #f4f4f4;<br>
+    ⠀text-align: center;<br>
+    ⠀margin: 50px;<br>
+}<br>
+⠀<br>
+button {<br>
+    ⠀background-color: #008cba;<br>
+    ⠀color: white;<br>
+    ⠀padding: 10px 20px;<br>
+    ⠀border: none;<br>
+    ⠀border-radius: 5px;<br>
+    ⠀cursor: pointer;<br>
+    ⠀font-size: 16px;<br>
+    ⠀transition: background-color 0.3s;<br>
+}<br>
+⠀<br>
+
+button:hover { <br>
+    ⠀background-color: #005f73;<br>
+}</code>
+        </div>
+         <ul>
+          <li></li>
+        </ul
+      </section>
+      <section class="main-section" id="python">
+        <header>Python</header>
+        <p>Python is a high-level, interpreted programming language known for its simplicity and readability. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming. Python is widely used in web development, data science, artificial intelligence, automation, and more. Its extensive standard library and third-party packages make it a versatile choice for both beginners and experienced developers.
+</p>
+        <p>One of Python's key advantages is its clean and concise syntax, which makes coding more intuitive and easier to maintain. It is commonly used for backend development with frameworks like Django and Flask, as well as for data analysis with libraries like Pandas and NumPy. Below is a simple Python example that prints a message when a button is clicked using Tkinter, a built-in GUI toolkit:</p>
+        <div class="code-container">
+          <code>
+            import tkinter as tk<br>
+            ⠀<br>
+            def on_button_click():<br>
+            ⠀label.config(text="The content has changed!")<br>
+            ⠀<br>
+            root = tk.Tk()<br>
+            root.title("Python GUI Example")<br>
+            ⠀<br>
+            label = tk.Label(root, text="Click the button")<br>
+            label.pack(pady=10)<br>
+            ⠀<br>
+            button = tk.Button(root, text="Click Me", command=on_button_click)<br>
+            button.pack(pady=5)<br>
+            ⠀<br>
+            root.mainloop()<br>
+          </code>
+        </div>
+        <ul>
+          <li></li>
+        </ul>
+      </section>
+      <section class="main-section" id="java">
+        <header>Java</header>
+        <p>Java is a high-level, object-oriented programming language known for its platform independence, thanks to the "write once, run anywhere" (WORA) principle enabled by the Java Virtual Machine (JVM). It is widely used in web development, mobile applications (Android), enterprise software, and backend systems. Java's strong typing, memory management through garbage collection, and extensive standard library make it a reliable choice for building scalable applications.</p>
+        <p>One of Java's key strengths is its robust ecosystem, including frameworks like Spring and Hibernate for backend development. It is also widely used in desktop applications with JavaFX and Swing. Below is a simple Java example using Swing to create a GUI application where a button click updates a label's text:</p>
+        <div class="code-container">
+          <code>
+import javax.swing.*;<br>
+import java.awt.event.ActionEvent;<br>
+import java.awt.event.ActionListener;<br>
+⠀<br>
+public class JavaGUIExample {<br>
+⠀public static void main(String[] args) {<br>
+⠀⠀    JFrame frame = new JFrame("Java GUI Example");<br>
+⠀⠀    frame.setSize(300, 200);<br>
+⠀⠀    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);<br>
+ ⠀⠀   frame.setLayout(null);<br>
+⠀<br>
+⠀⠀    JLabel label = new JLabel("Click the button");<br>
+⠀⠀    label.setBounds(100, 50, 150, 20);<br>
+⠀⠀    frame.add(label);<br>
+⠀<br>
+⠀⠀    JButton button = new JButton("Click Me");<br>
+⠀⠀    button.setBounds(100, 100, 100, 30);<br>
+⠀⠀    frame.add(button);<br>
+⠀<br>
+⠀⠀   button.addActionListener(new ActionListener() {<br>
+⠀⠀⠀      @Override<br>
+⠀⠀⠀      public void actionPerformed(ActionEvent e) {<br>
+⠀⠀⠀⠀        label.setText("The content has changed!");<br>
+⠀⠀⠀      }<br>
+⠀⠀    });<br>
+⠀<br>
+⠀⠀    frame.setVisible(true);<br>
+ ⠀ }<br>
+}
+          </code>
+        </div>
+         <ul>
+          <li></li>
+        </ul
+      </section>
+      <section class="main-section" id="c">
+        <header>C</header>
+        <p>C is a powerful, high-performance, and procedural programming language widely used for system programming, embedded systems, and application development. Known for its efficiency and low-level memory manipulation, C provides direct access to hardware and is the foundation for many modern programming languages. It is commonly used in operating systems, game development, and firmware due to its speed and control over system resources.</p>
+        <p>One of C's key strengths is its portability, as programs written in C can be compiled and run on various platforms with minimal modifications. It also provides extensive use of pointers, structures, and manual memory management, giving developers full control over how data is stored and accessed. Below is a simple C program that creates a basic console-based interaction where the user presses a key to change a message:</p> 
+        <div class="code-container">
+          <code>
+            #include < stdio.h > <span>//<>'s and stdio.h together</span><br>
+⠀<br>
+int main() {<br>
+ ⠀   char input;<br>
+    
+⠀    printf("Press any key to change the message...\n");<br>
+⠀    getchar(); // Waits for user input<br>
+
+ ⠀   printf("The content has changed!\n");<br>
+
+ ⠀   return 0;<br>
+}
+          </code>
+        </div>
+        <ul>
+          <li></li>
+        </ul
+      </section>
+    </main>
+  </body>
+</html>
