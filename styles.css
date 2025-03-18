@@ -22,7 +22,7 @@ ul {
 
  body {
    background-color: var(--background-color);
-   min-width: 550px;
+   min-width: 320px;
  }
 
 #navbar {
