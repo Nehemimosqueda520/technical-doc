@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,6 +13,7 @@
   --border-color: #a39f9f;
   --code-color: #ada8a886;
   --comment-color: rgb(42, 137, 42);
+  --text-color: black;
 }
 
 ul {
@@ -20,6 +22,7 @@ ul {
 
  body {
    background-color: var(--background-color);
+   min-width: 550px;
  }
 
 #navbar {
@@ -32,6 +35,7 @@ ul {
   color: var(--main-color);
   background-color: var(--navbar-color);
   box-shadow: 0 0 30px 0 var(--shadow-color);
+  margin: 0;
 }
 
 .nav-link {
@@ -52,8 +56,8 @@ ul {
 }
 
 .main-section {
- margin: 2% 0;
- scroll-margin-top: 100px;
+  margin: 2% 0;
+  scroll-margin-top: 100px;
 }
 
 header:not(.main-header) {
@@ -65,6 +69,7 @@ header:not(.main-header) {
 
 p {
   margin-bottom: 5px;
+  color: var(--text-color);
 }
 
 .code-container{
@@ -72,11 +77,13 @@ p {
   min-height: 100px;
   padding: 1em;
   background-color: var(--code-color);
-  width: 100%;
+  width: 50%;
+  min-width: 500px;
   max-width: 900px;
   border: 1px solid var(--border-color);
   box-shadow: 5px 5px 10px 0 var(--shadow-color);
-  border-radius: 60px
+  border-radius: 60px;
+  overflow: auto;
 }
 
 code, span {
@@ -87,13 +94,20 @@ span {
   color: var(--comment-color);
 }
 
-/* @media(min-width:1300px) {
+ @media(min-width: 1400px) {
 
-  :root {
-    --background-color: #041847;
-    --main-color: rgb(224, 87, 37); 
-    --navbar-color: #0f044c;
-    --text-color: white;
-  }
-} */
+   :root {
+     --background-color: #041847;
+     --main-color: rgb(224, 87, 37); 
+     --navbar-color: #0f044c;
+     --text-color: white;
+   }
+  
+} 
+
+
+
+
+
+
 
